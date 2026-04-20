@@ -1,0 +1,13 @@
+# 核心依赖
+langchain
+langchain-core
+langchain-community
+streamlit
+chromadb
+pyyaml
+
+# 通义千问相关
+dashscope
+
+# 其他依赖
+python-dotenv
