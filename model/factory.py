@@ -1,10 +1,14 @@
+import os
 from abc import ABC, abstractmethod
 from typing import Optional
+import dashscope
 from langchain_core.embeddings import Embeddings
 from langchain_community.chat_models.tongyi import BaseChatModel
 from langchain_community.embeddings import DashScopeEmbeddings
 from langchain_community.chat_models.tongyi import ChatTongyi
 from utils.config_handler import rag_conf
+
+dashscope.api_key = os.environ.get("DASHSCOPE_API_KEY", "")
 
 
 class BaseModelFactory(ABC):

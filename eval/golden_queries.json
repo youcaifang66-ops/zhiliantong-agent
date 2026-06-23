@@ -1,0 +1,302 @@
+[
+    {
+        "id": 1,
+        "query": "小户型适合哪些扫地机器人",
+        "category": "选购指南",
+        "expected_keywords": ["小户型", "轻薄", "机身", "紧凑"]
+    },
+    {
+        "id": 2,
+        "query": "扫地机器人怎么连接WiFi",
+        "category": "选购指南",
+        "expected_keywords": ["WiFi", "连接", "配网", "APP"]
+    },
+    {
+        "id": 3,
+        "query": "扫地机器人的维护保养方法有哪些",
+        "category": "维护保养",
+        "expected_keywords": ["保养", "维护", "清洁", "检查"]
+    },
+    {
+        "id": 4,
+        "query": "拖地时水箱漏水怎么处理",
+        "category": "故障排除",
+        "expected_keywords": ["水箱", "漏水", "密封", "检查"]
+    },
+    {
+        "id": 5,
+        "query": "扫地机器人找不到充电座怎么办",
+        "category": "故障排除",
+        "expected_keywords": ["充电座", "回充", "信号", "位置"]
+    },
+    {
+        "id": 6,
+        "query": "边刷多久需要更换一次",
+        "category": "维护保养",
+        "expected_keywords": ["边刷", "更换", "周期", "3个月"]
+    },
+    {
+        "id": 7,
+        "query": "滤网怎么清洗",
+        "category": "维护保养",
+        "expected_keywords": ["滤网", "清洗", "水洗", "晾干"]
+    },
+    {
+        "id": 8,
+        "query": "扫地机器人吸力不够怎么办",
+        "category": "故障排除",
+        "expected_keywords": ["吸力", "尘盒", "滤网", "清理"]
+    },
+    {
+        "id": 9,
+        "query": "大户型推荐哪款扫地机器人",
+        "category": "选购指南",
+        "expected_keywords": ["大户型", "大容量", "续航", "导航"]
+    },
+    {
+        "id": 10,
+        "query": "扫地机器人在地毯上清扫效果不好",
+        "category": "故障排除",
+        "expected_keywords": ["地毯", "增压", "吸力", "模式"]
+    },
+    {
+        "id": 11,
+        "query": "扫地机器人主刷缠绕毛发怎么清理",
+        "category": "故障排除",
+        "expected_keywords": ["主刷", "缠绕", "毛发", "清理"]
+    },
+    {
+        "id": 12,
+        "query": "扫地机器人充电很慢是什么原因",
+        "category": "故障排除",
+        "expected_keywords": ["充电", "电源", "接触", "适配器"]
+    },
+    {
+        "id": 13,
+        "query": "万向轮怎么清洁保养",
+        "category": "维护保养",
+        "expected_keywords": ["万向轮", "清洁", "毛发", "异物"]
+    },
+    {
+        "id": 14,
+        "query": "扫地机器人适合养宠物的家庭吗",
+        "category": "选购指南",
+        "expected_keywords": ["宠物", "毛发", "胶刷", "防缠绕"]
+    },
+    {
+        "id": 15,
+        "query": "扫地机器人清扫时噪音很大",
+        "category": "故障排除",
+        "expected_keywords": ["噪音", "异响", "主刷", "检查"]
+    },
+    {
+        "id": 16,
+        "query": "拖布多久更换一次",
+        "category": "维护保养",
+        "expected_keywords": ["拖布", "更换", "清洗", "周期"]
+    },
+    {
+        "id": 17,
+        "query": "扫地机器人避障能力差怎么办",
+        "category": "故障排除",
+        "expected_keywords": ["避障", "传感器", "擦拭", "障碍物"]
+    },
+    {
+        "id": 18,
+        "query": "哪些扫地机器人支持自动集尘",
+        "category": "选购指南",
+        "expected_keywords": ["集尘", "自动", "尘袋", "容量"]
+    },
+    {
+        "id": 19,
+        "query": "扫地机器人的尘盒怎么清理",
+        "category": "维护保养",
+        "expected_keywords": ["尘盒", "清理", "倒空", "清洗"]
+    },
+    {
+        "id": 20,
+        "query": "扫地机器人总是原地打转",
+        "category": "故障排除",
+        "expected_keywords": ["原地", "打转", "传感器", "卡住"]
+    },
+    {
+        "id": 21,
+        "query": "南方潮湿地区适合用扫地机器人吗",
+        "category": "选购指南",
+        "expected_keywords": ["潮湿", "防潮", "拖地", "通风"]
+    },
+    {
+        "id": 22,
+        "query": "扫地机器人怎么设置定时清扫",
+        "category": "选购指南",
+        "expected_keywords": ["定时", "预约", "APP", "设置"]
+    },
+    {
+        "id": 23,
+        "query": "扫地机器人的激光雷达坏了能修吗",
+        "category": "故障排除",
+        "expected_keywords": ["激光雷达", "维修", "售后", "更换"]
+    },
+    {
+        "id": 24,
+        "query": "滚刷和胶刷哪个好",
+        "category": "选购指南",
+        "expected_keywords": ["滚刷", "胶刷", "对比", "毛发"]
+    },
+    {
+        "id": 25,
+        "query": "扫地机器人拖地后地面有水渍",
+        "category": "故障排除",
+        "expected_keywords": ["水渍", "出水量", "拖布", "调节"]
+    },
+    {
+        "id": 26,
+        "query": "扫地机器人的电池寿命有多久",
+        "category": "维护保养",
+        "expected_keywords": ["电池", "寿命", "充电", "衰减"]
+    },
+    {
+        "id": 27,
+        "query": "扫地机器人可以清理沙发底下吗",
+        "category": "选购指南",
+        "expected_keywords": ["机身", "高度", "低矮", "通过性"]
+    },
+    {
+        "id": 28,
+        "query": "扫地机器人清扫遗漏区域怎么办",
+        "category": "故障排除",
+        "expected_keywords": ["遗漏", "覆盖率", "路径", "分区"]
+    },
+    {
+        "id": 29,
+        "query": "扫地机器人APP连不上怎么办",
+        "category": "故障排除",
+        "expected_keywords": ["APP", "连接", "蓝牙", "网络"]
+    },
+    {
+        "id": 30,
+        "query": "2000元以内推荐哪款扫地机器人",
+        "category": "选购指南",
+        "expected_keywords": ["预算", "性价比", "推荐", "价位"]
+    },
+    {
+        "id": 31,
+        "query": "扫地机器人的边刷断了怎么更换",
+        "category": "维护保养",
+        "expected_keywords": ["边刷", "更换", "安装", "卡扣"]
+    },
+    {
+        "id": 32,
+        "query": "扫地机器人清扫时推着拖鞋跑",
+        "category": "故障排除",
+        "expected_keywords": ["推着", "障碍物", "避障", "清理"]
+    },
+    {
+        "id": 33,
+        "query": "扫地机器人和扫拖一体机有什么区别",
+        "category": "选购指南",
+        "expected_keywords": ["扫地", "扫拖", "区别", "拖地功能"]
+    },
+    {
+        "id": 34,
+        "query": "扫地机器人的传感器怎么清洁",
+        "category": "维护保养",
+        "expected_keywords": ["传感器", "清洁", "擦拭", "灰尘"]
+    },
+    {
+        "id": 35,
+        "query": "扫地机器人清扫完没有回到充电座",
+        "category": "故障排除",
+        "expected_keywords": ["回充", "充电座", "信号", "电量"]
+    },
+    {
+        "id": 36,
+        "query": "养猫家庭选扫地机器人要注意什么",
+        "category": "选购指南",
+        "expected_keywords": ["猫", "毛发", "防缠绕", "吸力"]
+    },
+    {
+        "id": 37,
+        "query": "扫地机器人的使用寿命一般是多久",
+        "category": "维护保养",
+        "expected_keywords": ["寿命", "使用", "年限", "保养"]
+    },
+    {
+        "id": 38,
+        "query": "扫地机器人显示电量不足但充不进电",
+        "category": "故障排除",
+        "expected_keywords": ["电量", "充电", "电池", "适配器"]
+    },
+    {
+        "id": 39,
+        "query": "扫地机器人能爬过门槛吗",
+        "category": "选购指南",
+        "expected_keywords": ["门槛", "越障", "高度", "通过性"]
+    },
+    {
+        "id": 40,
+        "query": "扫地机器人水箱不出水怎么办",
+        "category": "故障排除",
+        "expected_keywords": ["水箱", "出水", "水泵", "堵塞"]
+    },
+    {
+        "id": 41,
+        "query": "扫地机器人的拖布怎么清洗",
+        "category": "维护保养",
+        "expected_keywords": ["拖布", "清洗", "手洗", "晾干"]
+    },
+    {
+        "id": 42,
+        "query": "扫地机器人清扫卡在家具下面出不来",
+        "category": "故障排除",
+        "expected_keywords": ["卡住", "家具", "高度", "脱困"]
+    },
+    {
+        "id": 43,
+        "query": "有宝宝的家庭适合用扫地机器人吗",
+        "category": "选购指南",
+        "expected_keywords": ["宝宝", "安全", "噪音", "消毒"]
+    },
+    {
+        "id": 44,
+        "query": "扫地机器人的主刷怎么拆卸清洗",
+        "category": "维护保养",
+        "expected_keywords": ["主刷", "拆卸", "清洗", "安装"]
+    },
+    {
+        "id": 45,
+        "query": "扫地机器人清扫路线很乱不规律",
+        "category": "故障排除",
+        "expected_keywords": ["路线", "规划", "导航", "建图"]
+    },
+    {
+        "id": 46,
+        "query": "扫地机器人适合别墅使用吗",
+        "category": "选购指南",
+        "expected_keywords": ["别墅", "大面积", "多楼层", "续航"]
+    },
+    {
+        "id": 47,
+        "query": "扫地机器人长时间不用怎么保养",
+        "category": "维护保养",
+        "expected_keywords": ["长期", "存放", "电池", "保养"]
+    },
+    {
+        "id": 48,
+        "query": "扫地机器人清扫时撞墙怎么办",
+        "category": "故障排除",
+        "expected_keywords": ["撞墙", "缓冲", "传感器", "校准"]
+    },
+    {
+        "id": 49,
+        "query": "扫地机器人能清理墙角吗",
+        "category": "选购指南",
+        "expected_keywords": ["墙角", "边角", "边刷", "贴边"]
+    },
+    {
+        "id": 50,
+        "query": "扫地机器人的尘袋多久换一次",
+        "category": "维护保养",
+        "expected_keywords": ["尘袋", "更换", "集尘", "容量"]
+    }
+]

@@ -252,7 +252,7 @@
                  * data: {"content": "我是"}\n\n
                  * data: {"content": "客服"}\n\n
                  */
-                const response = await fetch('http://localhost:8000/chat', {
+                const response = await fetch(`${window.location.origin}/chat`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ query }),
@@ -303,7 +303,7 @@
                 }
             } catch (e) {
                 hideLoading();
-                addMessage('assistant', '❌ 连接失败，请确保后端服务已启动（uvicorn fastapi_main:app --reload --port 8000）');
+                addMessage('assistant', '❌ 连接失败，请确保后端服务已启动');
             } finally {
                 // 恢复按钮
                 sendBtn.disabled = false;

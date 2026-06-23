@@ -1,10 +1,11 @@
-
 """
-总结服务类：用户提问，搜索参考资料，将提问和参考资料提交给模型，让模型总结回复
+总结服务类：用户提问，混合检索参考资料，将提问和参考资料提交给模型，让模型总结回复
+
+检索策略：BM25 关键词匹配 + Embedding 语义检索 → RRF 融合排序
 """
 from langchain_core.documents import Document
 from langchain_core.output_parsers import StrOutputParser
-from rag.vector_store import VectorStoreService
+from rag.hybrid_retriever import HybridRetriever
 from utils.prompt_loader import load_rag_prompts
 from langchain_core.prompts import PromptTemplate
 from model.factory import chat_model
@@ -19,8 +20,7 @@ def print_prompt(prompt):
 
 class RagSummarizeService(object):
     def __init__(self):
-        self.vector_store = VectorStoreService()
-        self.retriever = self.vector_store.get_retriever()
+        self.retriever = HybridRetriever()
         self.prompt_text = load_rag_prompts()
         self.prompt_template = PromptTemplate.from_template(self.prompt_text)
         self.model = chat_model
@@ -31,7 +31,7 @@ class RagSummarizeService(object):
         return chain
 
     def retriever_docs(self, query: str) -> list[Document]:
-        return self.retriever.invoke(query)
+        return self.retriever.search(query)
 
     def rag_summarize(self, query: str) -> str:
 

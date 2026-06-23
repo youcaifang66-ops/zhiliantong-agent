@@ -45,6 +45,19 @@ def load_report_prompts():
         raise e
 
 
+def load_prompt_by_file(filename: str) -> str:
+    """根据提示词文件名加载内容"""
+    from utils.path_tool import get_abs_path
+    import os
+    prompt_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "prompts")
+    prompt_path = os.path.join(prompt_dir, filename)
+    try:
+        return open(prompt_path, "r", encoding="utf-8").read()
+    except Exception as e:
+        logger.error(f"[load_prompt_by_file]加载 {filename} 失败：{str(e)}")
+        return load_system_prompts()
+
+
 if __name__ == '__main__':
     print(load_report_prompts())
 
