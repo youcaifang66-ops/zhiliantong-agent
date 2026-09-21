@@ -4,7 +4,6 @@ from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
 
-
 SYNONYMS = {
     "膝盖不舒服": "膝盖 疼痛 关节 安全 停止",
     "加重量": "渐进 超负荷 重量 次数",

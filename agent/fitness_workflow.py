@@ -6,7 +6,6 @@ from langgraph.graph import END, START, StateGraph
 from agent.intent_classifier import classify_intent
 from rag.evaluable_retriever import EvaluableHybridRetriever
 
-
 RED_FLAGS = ("胸痛", "昏厥", "呼吸困难", "骨折", "剧烈疼痛", "大量出血")
 
 

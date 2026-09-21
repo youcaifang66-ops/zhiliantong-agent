@@ -2,7 +2,6 @@ from pathlib import Path
 
 from rag.evaluable_retriever import EvaluableHybridRetriever
 
-
 DATA = Path(__file__).resolve().parents[1] / "data"
 
 
