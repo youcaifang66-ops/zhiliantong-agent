@@ -3,7 +3,8 @@ from langchain_core.messages import AIMessage
 from model.factory import chat_model
 from utils.prompt_loader import load_system_prompts
 from agent.tools.agent_tools import (rag_summarize, get_weather, get_user_location, get_user_id,
-                                     get_current_month, fetch_external_data, fill_context_for_report)
+                                     get_current_month, fetch_training_history,
+                                     fill_context_for_training_report)
 from agent.tools.middleware import monitor_tool, log_before_model, intent_prompt_switch
 from agent.intent_classifier import classify_intent
 from agent.memory_manager import MemoryManager
@@ -16,7 +17,7 @@ class ReactAgent:
             model=chat_model,
             system_prompt=load_system_prompts(),
             tools=[rag_summarize, get_weather, get_user_location, get_user_id,
-                   get_current_month, fetch_external_data, fill_context_for_report],
+                   get_current_month, fetch_training_history, fill_context_for_training_report],
             middleware=[monitor_tool, log_before_model, intent_prompt_switch],
         )
         self.memory_manager = MemoryManager()
@@ -64,5 +65,5 @@ class ReactAgent:
 if __name__ == '__main__':
     agent = ReactAgent()
 
-    for chunk in agent.execute_stream("给我生成我的使用报告"):
+    for chunk in agent.execute_stream("给我生成本月训练报告"):
         print(chunk, end="", flush=True)

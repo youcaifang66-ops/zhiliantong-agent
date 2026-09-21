@@ -2,8 +2,8 @@
 混合检索模块：BM25 关键词检索 + Embedding 向量检索 + RRF 融合排序
 
 设计思路：
-  1. BM25 通道：捕获精确关键词匹配（如 "E4 错误码" 精确命中故障排除文档）
-  2. Embedding 通道：捕获语义相关（如 "扫地机卡住" → "缠绕故障"）
+  1. BM25 通道：捕获精确关键词匹配（如 "罗马尼亚硬拉" 精确命中动作知识）
+  2. Embedding 通道：捕获语义相关（如 "练完膝盖不舒服" → "训练安全"）
   3. RRF 融合：将两个通道的排序结果合并，消除单一通道的偏差
 """
 import jieba
@@ -24,7 +24,7 @@ class HybridRetriever:
 
     使用方式：
         retriever = HybridRetriever()
-        results = retriever.search("E4错误码怎么办", top_k=5)
+        results = retriever.search("深蹲时膝盖不舒服怎么办", top_k=5)
     """
 
     def __init__(self):

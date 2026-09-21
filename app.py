@@ -5,7 +5,7 @@ import streamlit as st
 from agent.react_agent import ReactAgent
 
 # 标题
-st.title("智扫通机器人智能客服")
+st.title("智练通健身 Agent")
 st.divider()
 
 # 初始化 session 状态
@@ -44,7 +44,7 @@ if prompt:
     st.session_state["message"].append({"role": "user", "content": prompt})
 
     response_messages = []
-    with st.spinner("智能客服思考中..."):
+    with st.spinner("训练助手思考中..."):
         res_stream = st.session_state["agent"].execute_stream(
             prompt,
             user_id=st.session_state["user_id"],

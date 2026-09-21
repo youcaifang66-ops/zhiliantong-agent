@@ -2,7 +2,7 @@
 中间件模块：
   1. monitor_tool — 工具调用监控与日志记录
   2. log_before_model — 模型调用前日志记录
-  3. intent_prompt_switch — 基于意图分类器的动态提示词切换（兼容 report 标记）
+  3. intent_prompt_switch — 基于意图分类器的动态提示词切换（兼容训练报告标记）
 """
 from typing import Callable
 from utils.prompt_loader import load_system_prompts, load_prompt_by_file
@@ -29,8 +29,8 @@ def monitor_tool(
         result = handler(request)
         logger.info(f"[tool monitor]工具{request.tool_call['name']}调用成功")
 
-        # fill_context_for_report 调用后标记 report，供 intent_prompt_switch 读取
-        if request.tool_call['name'] == "fill_context_for_report":
+        # 报告上下文工具调用后标记 report，供 intent_prompt_switch 读取
+        if request.tool_call['name'] == "fill_context_for_training_report":
             request.runtime.context["report"] = True
 
         return result
@@ -56,7 +56,7 @@ def intent_prompt_switch(request: ModelRequest):
     基于意图分类器的动态提示词切换
 
     优先级：
-    1. context["report"] == True → 报告生成提示词（LLM 运行时调用 fill_context_for_report 触发）
+    1. context["report"] == True → 报告生成提示词（报告上下文工具触发）
     2. context["intent"] → 对应意图的提示词（预判注入）
     3. 对最后一条用户消息做分类（兜底）
     """

@@ -1,5 +1,5 @@
 """
-智扫通智能客服 - FastAPI 服务入口
+智练通健身 Agent - FastAPI 服务入口
 
 【FastAPI 核心概念学习】
 - FastAPI()：创建应用实例，相当于 Django 的  django-admin startproject
@@ -32,7 +32,7 @@ from agent.react_agent import ReactAgent  # 复用你已有的 Agent 代码，�
 # ============================================================
 # 相当于 Django 项目中的 FastAPI 替代了 django-admin startproject 创建的项目实例
 # title 会在 /docs 页面显示为标题
-app = FastAPI(title="智扫通智能客服", description="基于 LLM+RAG+Agent 的扫地机器人智能问答系统")
+app = FastAPI(title="智练通健身 Agent", description="基于 LLM + RAG + Agent 的个性化健身助手")
 
 # ============================================================
 # 【FastAPI】配置跨域
@@ -165,7 +165,7 @@ async def health():
     """健康检查接口"""
     return {
         "status": "ok",
-        "service": "智扫通智能客服",
+        "service": "智练通健身 Agent",
         "agent_ready": agent is not None,
         "active_users": len(user_histories),
     }

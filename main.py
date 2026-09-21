@@ -4,7 +4,7 @@ from pydantic import BaseModel
 from fastapi.responses import StreamingResponse
 from agent.react_agent import ReactAgent
 
-app = FastAPI(title="智扫通智能客服")
+app = FastAPI(title="智练通健身 Agent")
 
 # 请求体定义
 class ChatRequest(BaseModel):
