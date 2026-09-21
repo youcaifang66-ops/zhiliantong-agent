@@ -6,7 +6,6 @@ from api_app import create_app
 from infrastructure.training_repository import SQLiteTrainingRepository
 from rag.evaluable_retriever import EvaluableHybridRetriever
 
-
 ROOT = Path(__file__).resolve().parents[1]
 
 

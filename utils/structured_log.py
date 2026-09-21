@@ -4,7 +4,6 @@ import time
 import uuid
 from contextlib import contextmanager
 
-
 logger = logging.getLogger("zhiliantong.telemetry")
 
 
